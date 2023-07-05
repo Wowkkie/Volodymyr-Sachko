@@ -1,11 +1,15 @@
-def eat_cake_time(t1, t2, t3):
-    total_time = t1 + t2 + t3
-    return round(total_time, 2)
+#include <stdio.h>
 
-# Приклад використання
-t1 = 2
-t2 = 3
-t3 = 4
+int main() {
+    int t1, t2, t3;
+    printf("Введіть 3 числа:\n");
+    scanf("%d %d %d", &t1, &t2, &t3); 
 
-result = eat_cake_time(t1, t2, t3)
-print(result)
+    double total_time = 1.0 / t1 + 1.0 / t2 + 1.0 / t3;
+
+    double cake_time = 1.0 / total_time; 
+
+    printf("Час необхідний для зїдання пирога: ""%.2f\n", cake_time); 
+
+    return 0;
+}
