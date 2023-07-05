@@ -1,0 +1,11 @@
+def eat_cake_time(t1, t2, t3):
+    total_time = t1 + t2 + t3
+    return round(total_time, 2)
+
+# Приклад використання
+t1 = 2
+t2 = 3
+t3 = 4
+
+result = eat_cake_time(t1, t2, t3)
+print(result)
